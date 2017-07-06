@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tns.espapp.activity.LockScreenActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+    </LinearLayout>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ImageView
+
+        android:layout_marginTop="20dp"
+       android:src="@drawable/tns_icon"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="100dp" />
+
+
+    <TextView
+        android:gravity="center"
+       android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tnsMpinTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:shadowColor="@color/sky_blue"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/empIdTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/password"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/largeTextSize" />
+
+
+
+
+            <EditText
+
+                android:background="@drawable/latest_edt_bg"
+                android:layout_margin="15dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/employeePasswordEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+
+
+    <Button
+        android:minHeight="0dp"
+        android:id="@+id/verifyBtn"
+        android:maxHeight="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_round"
+        android:text="@string/verify"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>
+</LinearLayout>
